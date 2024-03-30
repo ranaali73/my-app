@@ -21,8 +21,8 @@ export default function Blog() {
             </div>
             <div style={{ textAlign: 'center' }}>
                 <Link href="/" style={{ display: 'inline-block', fontSize: '20px', padding: '10px', backgroundColor: '#333', color: '#fff', textDecoration: 'none', width: '200px', marginTop: '30px', borderRadius: '5px' }}>Back to Home</Link>
-                <h1>What is useRouter()?</h1>
-                <p>Here, I have used useRouter(), so what is useRouter? I'll explain in the following paragraph.</p>
+                <h1>What is useRouter</h1>
+                <p>Here, I have used useRouter, so what is useRouter. I'll explain in the following paragraph.</p>
 
                 <h2>
                     Navigate Programmatically:</h2>
