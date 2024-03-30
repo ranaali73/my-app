@@ -27,9 +27,10 @@ export default function Blog() {
                 <h2>
                     Navigate Programmatically:</h2>
                 <p>
-                    Instead of using Link components, you might encounter situations where you need to implement logic or validations before navigating to the next page. For example, let's say you're on a blog page with a button labeled "Add Post." You want to execute some logic, such as validating user input, before navigating to the next page after clicking this button. While the simple Link component can handle basic page-to-page navigation, it lacks the flexibility to execute custom logic or validations. This is where the useRouter hook comes into play. By using the useRouter hook, you can incorporate your custom logic and validations before initiating the navigation to the next page when a button is clicked. This allows for a more dynamic and interactive user experience in your Next.js application.
+                    Instead of using Link components, you might encounter situations where you need to implement logic or validations before navigating to the next page. For example, let's say you're on a blog page with a button labeled Add Post. You want to execute some logic, such as validating user input, before navigating to the next page after clicking this button. While the simple Link component can handle basic page-to-page navigation, it lacks the flexibility to execute custom logic or validations. This is where the useRouter hook comes into play. By using the useRouter hook, you can incorporate your custom logic and validations before initiating the navigation to the next page when a button is clicked. This allows for a more dynamic and interactive user experience in your Next.js application.
                 </p>
             </div >
+
 
 
 
