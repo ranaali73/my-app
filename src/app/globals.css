@@ -18,12 +18,12 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 @layer utilities {
@@ -31,3 +31,73 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Navbar Styles */
+.menu {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+
+.menu-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Change to flex to make it horizontal */
+  justify-content: space-around; /* Distribute items evenly */
+}
+
+.menu-list li {
+  position: relative;
+}
+
+.menu-list li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s;
+  text-align: center; /* Center the text */
+  width: 100%; /* Ensure full width */
+}
+
+.menu-list li a:hover {
+  background-color: #555;
+}
+
+/* Submenu Styles */
+.submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%; /* Adjusted positioning */
+  background-color: #555;
+  border: 1px solid #ccc;
+  list-style-type: none; /* Remove bullets from submenu */
+  padding: 0; /* Remove padding from submenu */
+  width: 200px; /* Set width to 200px */
+}
+
+.submenu li {
+  position: relative;
+}
+
+.submenu li a {
+  padding: 8px 20px;
+  display: block;
+  width: 100%; /* Ensure full width */
+}
+
+.menu-list li:hover > .submenu {
+  display: block;
+}
+
+.menu-list li:nth-child(3):hover > .submenu {
+  left: 100%; /* Move the submenu to the right */
+  top: 0; /* Align submenu with parent menu item */
+}
+
+.submenu li a:hover {
+  background-color: #777;
+}
+
